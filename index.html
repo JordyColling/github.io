@@ -10,156 +10,200 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <style type="text/css">
+
+  .container{
+    padding-top: 0.30rem;
+  }
     #cvImage{
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
       border-radius: 10px;
-      border-color: rgba(0,0,0,.05);
+      border-color: rgba(0,0,0,.2);
       border-style: solid;
-      border-width: 2px;
+      border-width: 1px;
     }
 /*    .card{
       background-color: rgba(200,200,255,.1)
     }*/
-    .table td, .table th {
-      padding-top: .55rem !important;
+    .table td,.tab th{
+      padding-top: 0.30rem !important;
+    }
+
+    hr{
+      border-top-color: rgba(0, 0, 0, 0.0);
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <center><h2>Curriculum vitae</h2></center>
+<!--    <center><h1>Curriculum vitae</h1></center>-->
     <div class="card shadow-sm">
       <div class="card-body py-0">
        <div class="row">
+         <div class="col-md-3 my-auto" >
+           <img id="cvImage" src="jordy.png" width="100%">
+         </div>
          <div class="col-md-9">
-           <h2 class="card-title"><i class="fas fa-id-card"></i> Jordy Colling</h2>
+           <h2 class="card-title"><i class="fas fa-id-card"></i>&emsp;Jordy Colling</h2>
            <table class="table table-striped">
                <tbody>
-                 <tr>
-                   <td>Adres</td>
+<!--             <tr>
+                   <td><i class="fas fa-home"></i>&emsp;Adres</td>
                    <td>Koningsveldstraat 13</td>
                  </tr>
                  <tr>
                    <td>Woonplaats</td>
                    <td>3570 Alken</td>
                  </tr>
+-->
+                <tr>
+                   <td><i class="fas fa-home"></i>&emsp;Adres</td>
+                   <td>Koningsveldstraat 13 <br>3570 Alken</td>
+                 </tr>
                  <tr>
-                   <td>Geboortedatum</td>
+                   <td><i class="fas fa-birthday-cake"></i>&emsp;Geboortedatum</td>
                    <td>20 augustus 1994</td>
                  </tr>
                  <tr>
-                   <td>E-mail</td>
+                   <td><i class="fas fa-at"></i>&emsp;E-mail</td>
                    <td>jordy.colling@hotmail.com</td>
                  </tr>
                  <tr>
-                   <td>Gsm nummer</td>
+                   <td><i class="fas fa-mobile-alt"></i>&emsp;Gsm nummer</td>
                    <td>0474/39 09 85</td>
                  </tr>
                  <tr>
-                   <td>Nationaliteit</td>
+                   <td><i class="fas fa-flag"></i>&emsp;Nationaliteit</td>
                    <td>Belg</td>
                  </tr>
-                 <tr>
-                   <td>Burgerlijke staat</td>
+<!--                 <tr>
+                   <td><i class="fas fa-ring"></i>&emsp;Burgerlijke staat</td>
                    <td>Ongehuwd</td>
-                 </tr>
+                 </tr>  -->
                  <tr>
-                   <td>Rijbewijs B</td>
+                   <td><i class="fas fa-car"></i>&emsp;Rijbewijs B</td>
                    <td><i class="fas fa-check"></i></td>
                  </tr>
                </tbody>
             </table>
-          </div>
-          <div class="col-md-3 my-auto" >
-            <img id="cvImage" src="image1.png" width="100%">
           </div>
         </div>
       </div>
     </div>
     <br>
     <div>
-    <h2 class="card-title"><i class="fas fa-medal"></i> Ervaring</h2>
+  <h2 class="card-title"><i class="fas fa-graduation-cap"></i>&emsp;Opleidingen & diploma's</h2>
+  <table class="table table-striped">
+    <thead >
+      <th>Opleiding</th>
+      <th>School</th>
+      <th>Periode</th>
+    </thead>
+      <tbody>
+        <tr>
+          <td>Bachelor elektromechanica studierichting Automatisering</td>
+          <td>KHLim (UCLL)</td>
+          <td>2012-2015</td>
+        </tr>
+        <tr>
+          <td>Schakelprogramma voor industrieel ingenieur in de Elektronica­-ICT (niet afgewerkt)</td>
+          <td>Universiteit Gent</td>
+          <td>2015 - 2016</td>
+        </tr>
+        <tr>
+          <td>Secundair onderwijs elektromechanica</td>
+          <td>TIHH Hasselt</td>
+          <td>2009 - 2012</td>
+        </tr>
+        <tr>
+          <td>VCA diploma: Veiligheid voor operationeel leidinggevenden</td>
+          <td></td>
+          <td>2015</td>
+        </tr>
+        <tr>
+          <td>VCA diploma: Basisveilighed</td>
+          <td></td>
+          <td>2011</td>
+        </tr>
+      </tbody>
+   </table>
+   <hr>
+  <h2 class="card-title"><i class="fas fa-briefcase"></i>&emsp;Ervaring</h2>
+  <table class="table table-striped">
+    <thead >
+      <th>Waar</th>
+      <th>Wat</th>
+      <th>Periode</th>
+    </thead>
+      <tbody>
+        <tr>
+          <td>Montech bvba (Machinebouw)</td>
+          <td>Software engineer:&emsp;Structured text, Somachine(Codesys), Vijeo</td>
+          <td>Maart 2016 - heden</td>
+        </tr>
+        <tr>
+          <td>Theuma NV</td>
+          <td>Elektrisch storingstechnieker</td>
+          <td>Oktober 2015 - Maart 2016</td>
+        </tr>
+        <tr>
+          <td>Stage & eindwerk Yamauchi Corp. Hasselt</td>
+          <td>
+            <ul>
+              <li>Project:&emsp;Evolta vision system (visie, PLC sturing,elektriciteit)</li>
+              <li>Project:&emsp;Uitnemen van producten uit spuitgietmachine (robotica, mechanisch ontwerp,CNC frezen)</li>
+            </ul>
+          </td>
+          <td>Februari - mei 2015</td>
+        </tr>
+        <tr>
+          <td>G.I.P. TIHH</td>
+          <td>Project:&emsp;Buttonpress (PLC sturing,mechanisch&elektrisch ontwerp,pneumatica)</td>
+          <td>2011 - 2012</td>
+        </tr>
+      </tbody>
+   </table>
+  <hr>
+    <h2 class="card-title"><i class="fas fa-globe-europe"></i>&emsp;Talenkennis</h2>
     <table class="table table-striped">
-      <thead>
-        <th>Waar</th>
-        <th>Wat</th>
-        <th>Periode</th>
+      <thead >
+        <th>Taal</th>
+        <th>Kennis</th>
       </thead>
         <tbody>
           <tr>
-            <td>Montech bvba</td>
-            <td>Software engineer</td>
-            <td>Maart 2016 - heden</td>
+            <td>Nederlands</td>
+            <td>Native</td>
           </tr>
           <tr>
-            <td>Theuma NV</td>
-            <td>Elektrisch storingstechnieker</td>
-            <td>Oktober 2015 - Maart 2016</td>
+            <td>Engels</td>
+            <td>Mondeling: zeer goed&emsp;&emsp;Schriftelijk: goed</td>
           </tr>
           <tr>
-            <td>Stage & eindwerk Yamauchi Corp. Hasselt</td>
-            <td>
-              <ul>
-                <li>Project: Evolta vision system (visie, PLC sturing,elektriciteit)</li>
-                <li>Project: Uitnemen van producten uit spuitgietmachine (robotica, mechanisch ontwerp,CNC frezen)</li>
-              </ul>
-            </td>
-            <td>Februari - mei 2015</td>
-          </tr>
-          <tr>
-            <td>G.I.P. TIHH</td>
-            <td>Project: Buttonpress (PLC sturing,mechanisch&elektrisch ontwerp,pneumatica)</td>
-            <td>2011 - 2012</td>
+            <td>Frans</td>
+            <td>Mondeling: matig&emsp;&emsp;&emsp;&emsp;Schriftelijk: matig</td>
           </tr>
         </tbody>
      </table>
-     <h2 class="card-title"><i class="fas fa-graduation-cap"></i> Opleiding</h2>
+     <hr>
+     <h2 class="card-title"><i class="fas fa-info-circle"></i>&emsp;Varia</h2>
      <table class="table table-striped">
-       <thead>
-         <th>Opleiding</th>
-         <th>School</th>
-         <th>Periode</th>
-       </thead>
          <tbody>
            <tr>
-             <td>Onafgewerkt schakelprogramma voor industrieel ingenieur in de Elektronica­-ICT</td>
-             <td>Universiteit Gent</td>
-             <td>2015 - 2016</td>
+             <td>Chiro Joento (Alken)</td>
+             <td>
+               <ul>
+                 <li>Lid:&emsp;2002-2012</li>
+                 <li>Leider:&emsp;2012-2017</li>
+               </ul>
+             </td>
            </tr>
            <tr>
-             <td>Bachelor elektromechanica studierichting Automatisering</td>
-             <td>KHLim (UCLL)</td>
-             <td>2012-2015</td>
-           </tr>
-           <tr>
-             <td>Secundair onderwijs elektromechanica</td>
-             <td>TIHH Hasselt</td>
-             <td>2009 - 2012</td>
+             <td>Speelpleinwerking plekboel (Alken)</td>
+             <td>Animator:&emsp;2012-2016</td>
            </tr>
          </tbody>
       </table>
-      <h2 class="card-title"><i class="fas fa-globe-europe"></i> Talenkennis</h2>
-      <table class="table table-striped">
-        <thead>
-          <th>Taal</th>
-          <th>Kennis</th>
-        </thead>
-          <tbody>
-            <tr>
-              <td>Nederlands</td>
-              <td>Moedertaal</td>
-            </tr>
-            <tr>
-              <td>Engels</td>
-              <td>Mondeling : zeer goed&emsp;&emsp;Schriftelijk : goed</td>
-            </tr>
-            <tr>
-              <td>Frans</td>
-              <td>Mondeling : matig&emsp;&emsp;&emsp;&emsp;Schriftelijk : matig</td>
-            </tr>
-          </tbody>
-       </table>
   </div>
   </div>
 </body>
